@@ -1,0 +1,12 @@
+otro_num=0
+suma=0
+num=""
+
+num=int(input("ingrese un numero\n"))
+print("favor ingresar un numero entero\n")
+
+while otro_num<=num:
+    suma+=otro_num
+    otro_num+=1
+
+print(f"la suma de los numeros desde el 1 hasta {num} es de: {suma}")

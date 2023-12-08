@@ -1,0 +1,16 @@
+# Solicitar al usuario los dos años
+primer_año = int(input("Ingrese el primer año: "))
+segundo_año = int(input("Ingrese el segundo año: "))
+
+# Iterar a través de los años en el rango especificado
+for año in range(primer_año, segundo_año + 1):
+    # Verificar si el año es bisiesto y múltiplo de 10
+    if (año % 4 == 0 and año % 100 != 0) or (año % 400 == 0):
+        if año % 10 == 0:
+            print(año)
+
+#En este programa, primero se solicita al usuario los dos años entre los
+#  cuales desea buscar años bisiestos y múltiplos de 10. Luego, se itera a
+#  través de todos los años en ese rango y se verifica si cada año cumple con
+#  las condiciones de ser bisiesto y múltiplo de 10. Si cumple ambas condiciones,
+#  se imprime el año.

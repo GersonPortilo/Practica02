@@ -1,0 +1,28 @@
+# Inicializar variables.
+total = 0
+
+# Ciclo while para ingresar los montos de compra.
+monto = float(input("Ingrese el monto de la compra (0 para finalizar): "))
+while monto != 0:
+
+    # Verificar si el monto es negativo.
+    if monto < 0:
+      print("El monto no puede ser negativo. Por favor, ingrese un nuevo monto.")
+    else:
+        # Sumar el monto al total de compras.
+        total += monto
+    monto = float(input("Ingrese el monto de la compra (0 para finalizar): "))
+
+        # Verificar si se aplica descuento.
+    if total > 1000:
+       descuento = total * 0.1
+    else:
+       descuento = 0
+
+       # Calculamos el total a pagar con descuento
+       total_con_descuento = total - descuento
+
+       # Mostrar resultados al cliente mas especifico.
+       print("Precio total sin descuento:", total)
+       print("Descuento aplicado del 10%:", descuento)
+       print("Total a pagar con descuento:", total_con_descuento)

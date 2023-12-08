@@ -1,0 +1,21 @@
+# Solicitar al usuario la cantidad de valores a iterar
+cantidad_valores = int(input("Ingrese la cantidad de valores a iterar: "))
+
+# Inicializar una variable para almacenar la suma
+suma = 0
+
+# Iterar la cantidad de veces especificada por el usuario
+for i in range(cantidad_valores):
+    # Solicitar al usuario que ingrese un valor numérico
+    valor = float(input(f"Ingrese el valor {i + 1}: "))
+    
+    # Sumar el valor ingresado a la suma total
+    suma += valor
+
+# Mostrar la suma de todos los números ingresados
+print(f"La suma de los {cantidad_valores} números ingresados es: {suma}")
+
+#Este programa primero solicita al usuario la cantidad de valores que desea ingresar, 
+# luego itera esa cantidad de veces,
+#  pidiendo al usuario que ingrese un valor numérico en cada iteración. 
+# La suma de estos valores se calcula y se muestra al final del programa.
